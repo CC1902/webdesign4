@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8">
+
+<meta name="keywords" content="coffee, chai, cha, cake, cafe, tea"> 
+<meta name="Charming cafe online and irl. Top quality coffee, chai, cha, tea, cakes & treats">
+<meta name="author" content="DOTS Cafe">
+<meta http-equiv="refresh" content="300">
+	<style>
+		
+	body   		{
+                font-family: georgian;
+				background-color: #ffffff;
+				}
+				
+	.center		{
+				display: block;
+				margin: auto;
+				text-align:center;
+				}
+	
+	ul	{
+			list-style-type: none;
+			margin: 0;
+			padding:0;
+			overflow: hidden;
+			height:50px;
+			background-color: #CB6CE6;
+			}
+			
+	ul img 	{
+			padding:0px;
+			height: 40px;
+			}
+			
+			
+	.menu	{
+			margin:0px;
+			padding:0px;
+			}
+      
+	  li	{
+			float: left;
+			width:20%;
+			background-color:#CB6CE6;
+			color:white;
+			font-size:30px;
+			height:50px;
+			}
+			
+	li a 	{
+			display: block;
+			color:white;
+			text-align:center;
+			padding: 10px;
+			background:color: #dddddd;
+			text-decoration:none;
+			height:50px;
+			}
+			
+li a:hover	{
+			background-color:#FF66C4;
+			color:white;
+			}
+			
+.wrapper	{
+			text-align: center;
+			background-color: #CB6CE6;
+			width:80%;
+			margin:auto;
+			margin-top:8%;
+			margin-bottom:8%;
+			}
+			
+	.polaroid	{
+				background: #209d5c;
+				padding: 1rem;
+				-webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+				-moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+				box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+				}
+				
+.polaroid > img {
+				max-width: 100%;
+				height: auto;
+				}
+				
+    .caption	{
+				font-size: 2.5rem;
+				text-align: center;
+				line-height: 2em;
+				background-color:white;
+				color:#ff66c4;
+				}
+				
+.item .polaroid:before	{
+						content: '';
+						position: absolute;
+						z-index: -1;
+						transition: all 0.40s;
+						}
+      
+.item:nth-of-type(2n+1) {
+						transform: scale(0.8, 0.8) rotate(5deg);
+						transition: all 0.35s;
+						}
+      
+.item:nth-of-type(2n+1) .polaroid:before{
+										transform: rotate(6deg);
+										box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.4);
+										}
+										
+.item:nth-of-type(2n+2) {
+						transform: scale(0.8, 0.8) rotate(-5deg);
+						transition: all 0.35s;
+						}
+						
+.item:nth-of-type(2n+2) .polaroid:before{
+										transform: rotate(-6deg);
+										box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.4);
+										}
+
+.item:hover {
+			filter: none;
+			transform: scale(1, 1) rotate(0deg);
+			transition: all 0.40s;
+			}	
+      
+.item:hover .polaroid:before{
+							content: '';
+							position: absolute;	
+							z-index: -1;
+							transform: rotate(0deg);
+							height: 60%;
+							width: 60%;	
+							bottom: 0%;
+							right: 10%;
+							box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+							transition: all 0.35s;
+							}
+      
+	</style>
+</head>
+<body>
+
+<nav>
+		<ul>
+			<li><a href ="index.html"> Home </a></li>
+			<li><a href ="myaboutus.html"> About us </a></li>
+			<li><a href ="mygallery.html"> Gallery </a></li>
+			<li><a href ="mycontactus.html"> Contact us</a></li>
+			<li><a href="index.html"> <img src="images/smallogo.png"></a></li>
+		</ul>
+</nav>
+
+<img src="images/NEWbanner.jpg" class="center" width="100%;" alt="Logo">
+
+<div class="wrapper" class="center">
+
+	<div class="item">
+        <div class="polaroid">
+			<img src="images/4.png">
+				<div class="caption">On the Menu - Our choice of Treats</div>
+        </div>
+    </div>
+	
+	<div class="item">
+        <div class="polaroid">
+          <img src="images/oranges.jpg">
+          <div class="caption">Citric Chocolate</div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="polaroid">
+          <img src="images/blues.jpg">
+          <div class="caption">Based on the Blueberry</div>
+        </div>
+      </div>
+	<div class="item">
+        <div class="polaroid">
+			<img src="images/reds.jpg">
+				<div class="caption">Strawberry Fields</div>
+        </div>
+    </div>
+	
+	<div class="item">
+        <div class="polaroid">
+			<img src="images/talk2.png">
+				<div class="caption">Phone, E-mail, Youtube or Facebook</div>
+        </div>
+    </div>
+</div>
+	
+<img src="images/bottomnew.jpg" width="100%" alt="Bottom">
+	
+
+	
+</body>
+</html>
